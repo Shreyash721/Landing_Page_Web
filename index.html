@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillCraft – Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="logo">
+  <img src="logo.png" alt="SkillCraft Logo" height="50">
+  <span>SkillCraft</span>
+</div>
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+  <ul id="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="internships.html">Internships</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="apply.html">Apply</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <h1>Welcome to SkillCraft Technology</h1>
+  <p>Your pathway to future-ready skills and real industry projects.</p>
+  <a href="internships.html" class="btn">Explore Internships</a>
+</section>
+
+<script>
+window.addEventListener("scroll", () => {
+  document.getElementById("navbar").classList.toggle("scrolled", window.scrollY > 50);
+});
+function toggleMenu() { document.getElementById("menu").classList.toggle("active"); }
+</script>
+
+</body>
+</html>

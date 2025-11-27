@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – SkillCraft</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="logo">
+    <img src="logo.png" alt="SkillCraft Logo" />
+    <span>SkillCraft</span>
+  </div>
+
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+  <ul id="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="internships.html">Internships</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="apply.html">Apply</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="contact-header">
+  <h1>Contact Us</h1>
+  <p>Your success matters to us — reach out anytime!</p>
+</section>
+
+<section class="contact-wrapper">
+
+  <!-- LEFT INFO CARD -->
+  <div class="contact-info-card">
+    <h2>Get in Touch</h2>
+    <p class="trust-text">
+      We value your questions and ideas.  
+      Our team will respond within 24 hours to help you with guidance, opportunities, and support.
+    </p>
+
+    <div class="info-item">
+      <span>📍</span>
+      <p>Bengaluru, India</p>
+    </div>
+
+    <div class="info-item">
+      <span>📞</span>
+      <p>+91 98763 xxxxx</p>
+    </div>
+
+    <div class="info-item">
+      <span>📧</span>
+      <p>support@skillcraft.com</p>
+    </div>
+
+    <div class="info-item">
+      <span>🕒</span>
+      <p>Mon – Sat · 9 AM to 7 PM</p>
+    </div>
+
+    <p class="quote">
+      “Let’s build something amazing together.”
+    </p>
+  </div>
+
+  <!-- RIGHT CONTACT FORM -->
+  <form class="contact-form">
+    <div class="form-group">
+      <input type="text" required />
+      <label>Your Name</label>
+    </div>
+
+    <div class="form-group">
+      <input type="email" required />
+      <label>Email Address</label>
+    </div>
+
+    <div class="form-group">
+      <input type="text" required />
+      <label>Subject</label>
+    </div>
+
+    <div class="form-group full">
+      <textarea required></textarea>
+      <label>Your Message</label>
+    </div>
+
+    <button class="contact-btn">Send Message</button>
+  </form>
+
+</section>
+
+<script>
+window.addEventListener("scroll", () => {
+  document
+    .getElementById("navbar")
+    .classList.toggle("scrolled", window.scrollY > 50);
+});
+
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

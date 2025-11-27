@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internships – SkillCraft</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="logo">
+  <img src="logo.png" alt="SkillCraft Logo" height="50">
+  <span>SkillCraft</span>
+</div>
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+  <ul id="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="internships.html">Internships</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="apply.html">Apply</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="page-header">
+  <h1>Open Internship Positions</h1>
+  <p>Enhance your skills through real-world industry projects</p>
+</section>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <select>
+    <option>All Domains</option>
+    <option>Web Development</option>
+    <option>Python Development</option>
+    <option>Java Development</option>
+    <option>AI & ML</option>
+  </select>
+
+  <select>
+    <option>Duration</option>
+    <option>1 Month</option>
+    <option>2 Months</option>
+    <option>3 Months</option>
+  </select>
+
+  <select>
+    <option>Mode</option>
+    <option>Online</option>
+    <option>Hybrid</option>
+  </select>
+</div>
+
+<!-- INTERACTIVE INTERNSHIP CARDS -->
+<section class="internship-list">
+
+  <div class="job-card">
+    <h2>Web Development Internship</h2>
+    <div class="tags">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span>
+    </div>
+    <p class="job-desc">Work on real websites and learn modern responsive UI development.</p>
+    <div class="job-info">
+      <p>🕒 Duration: 1–3 Months</p>
+      <p>🌐 Mode: Online</p>
+    </div>
+    <a href="apply.html" class="apply-btn">Apply Now</a>
+  </div>
+
+  <div class="job-card">
+    <h2>Python Development Internship</h2>
+    <div class="tags">
+      <span>Python</span><span>APIs</span><span>Automation</span>
+    </div>
+    <p class="job-desc">Build automation scripts, APIs and backend systems.</p>
+    <div class="job-info">
+      <p>🕒 Duration: 2 Months</p>
+      <p>🌐 Mode: Online</p>
+    </div>
+    <a href="apply.html" class="apply-btn">Apply Now</a>
+  </div>
+
+  <div class="job-card">
+    <h2>Java Development Internship</h2>
+    <div class="tags">
+      <span>Java</span><span>OOP</span><span>Spring Basic</span>
+    </div>
+    <p class="job-desc">Learn enterprise-level Java development with OOP concepts.</p>
+    <div class="job-info">
+      <p>🕒 Duration: 2–3 Months</p>
+      <p>🌐 Mode: Online</p>
+    </div>
+    <a href="apply.html" class="apply-btn">Apply Now</a>
+  </div>
+
+  <div class="job-card">
+    <h2>AI & Machine Learning Internship</h2>
+    <div class="tags">
+      <span>Python</span><span>NumPy</span><span>ML Models</span>
+    </div>
+    <p class="job-desc">Train ML models and build intelligent applications.</p>
+    <div class="job-info">
+      <p>🕒 Duration: 1–2 Months</p>
+      <p>🌐 Mode: Online</p>
+    </div>
+    <a href="apply.html" class="apply-btn">Apply Now</a>
+  </div>
+
+</section>
+
+<script>
+window.addEventListener("scroll", () => {
+  document.getElementById("navbar").classList.toggle("scrolled", window.scrollY > 50);
+});
+function toggleMenu() { document.getElementById("menu").classList.toggle("active"); }
+</script>
+
+</body>
+</html>

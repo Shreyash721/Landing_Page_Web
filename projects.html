@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillCraft – Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="logo">
+  <img src="logo.png" alt="SkillCraft Logo" height="50">
+  <span>SkillCraft</span>
+</div>
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+  <ul id="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="internships.html">Internships</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="apply.html">Apply</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="page-header">
+  <h1>Our Past Projects</h1>
+  <p>Real projects completed by our interns</p>
+</section>
+
+<section class="grid">
+
+  <div class="grid-item">AI Chatbot (Python)</div>
+  <div class="grid-item">E-Commerce Website</div>
+  <div class="grid-item">Banking Management System (Java)</div>
+  <div class="grid-item">Weather App (API Project)</div>
+  <div class="grid-item">Face Recognition System</div>
+  <div class="grid-item">Portfolio Website</div>
+
+</section>
+
+<script>
+window.addEventListener("scroll", () => {
+  document.getElementById("navbar").classList.toggle("scrolled", window.scrollY > 50);
+});
+function toggleMenu() { document.getElementById("menu").classList.toggle("active"); }
+</script>
+
+</body>
+</html>
